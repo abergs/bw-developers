@@ -9,19 +9,11 @@ hero:
 
 ---
 
-import { Card, CardGrid } from '@astrojs/starlight/components';
+import SplashMenu from '../../components/SplashMenu.astro';
 
-## Next steps
+# Documentation
+Quickstarts & tutorials by category.
 
-<CardGrid stagger>
-	<Card title="Contribute to Bitwarden" icon="pencil">
-		Read the [contributing docs](https://contributing.bitwarden.com) to learn how to create your first PR.  
-	</Card>
-	<Card title="Use the Passwordless.dev API" icon="add-document">
-		Looking to deploy passkeys to your app? [Get started in 5 minutes](https://docs.passwordless.dev)
-	</Card>
-	<Card title="Use the Secrets Manager SDK" icon="setting">
-		Import secrets into your app in any language [using the Secrets Manager SDK](https://bitwarden.com/help/secrets-manager-sdk/)
-	</Card>
-
-</CardGrid>
+<div class="not-content" >
+<SplashMenu />
+</div>

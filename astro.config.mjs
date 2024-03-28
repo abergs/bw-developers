@@ -9,6 +9,9 @@ export default defineConfig({
 			social: {
 				github: 'https://github.com/bitwarden',
 			},
+			logo: {
+				src: './src/assets/logo.png',
+			} ,
 			sidebar: [
 				{
 					label: 'Passwordless',				
