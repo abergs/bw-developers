@@ -11,17 +11,39 @@ export default defineConfig({
 			},
 			sidebar: [
 				{
-					label: 'Guides',
+					label: 'Passwordless',				
 					items: [
-						// Each item here is one entry in the navigation menu.
-						{ label: 'Example Guide', link: '/guides/example/' },
-					],
+						{ label: 'Product overview', link: '/passwordless/' },
+						{
+							label: 'Guides',
+							items: [
+								{ label: 'ASP.NET', link: '/passwordless/guides/how-to-asp-net' },
+								{ label: 'Node.JS', link: '/passwordless/guides/how-to-nodejs' },
+							]
+						},
+						{
+							label: 'References',							
+							autogenerate: { directory: 'passwordless/references' }
+						},
+						{
+							label: 'SDKs',							
+							autogenerate: { directory: 'passwordless/sdk' }
+						}
+					]
 				},
 				{
-					label: 'Reference',
-					autogenerate: { directory: 'reference' },
+					label: 'Secrets Manager',
+					autogenerate: { directory: 'secrets-manager' }
+				},
+				{
+					label: 'Contributing',
+					autogenerate: { directory: 'contributing-bw' }
 				},
 			],
+			components: {
+				Sidebar: './src/overrides/Sidebar.astro',
+				Pagination: './src/overrides/Pagination.astro',
+			  },
 		}),
 	],
 });
