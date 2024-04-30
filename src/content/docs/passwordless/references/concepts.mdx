@@ -2,6 +2,8 @@
 title: Concepts
 ---
 
+import {Aside} from "@astrojs/starlight/components";
+
 ## FIDO2
 
 FIDO2 is the world wide web consortium (W3C) standard's specification for web authentication (WebAuthn), and client to authenticator protocol (CTAP). FIDO authentication standards were developed in order to provide authentication that is more secure than standard passwords and SMS 2FA. Using FIDO authentication standards can provide a secure experience that is simpler for consumers to use and developers to implement. Learn more about FIDO at [FIDO Alliance](https://fidoalliance.org/fido2/).
@@ -100,9 +102,9 @@ Additionally, Passwordless.dev uses other types of tokens for special purposes:
 
 ### Attestation
 
-::: warning Important
-Attestation is only supported in our 'Enterprise' plan. Read more about our plans [here](https://bitwarden.com/products/passwordless/#pricing).
-:::
+<Aside type="caution" title="Important">
+  Attestation is only supported in our 'Enterprise' plan. Read more about our plans [here](https://bitwarden.com/products/passwordless/#pricing).
+</Aside>
 
 While WebAuthn is very secure, attestation enhances the security of the WebAuthn registration process by allowing the relying party to receive and verify information about the authenticator.
 
