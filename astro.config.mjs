@@ -22,14 +22,21 @@ export default defineConfig({
 							items: [
 								{ label: 'ASP.NET', link: '/passwordless/guides/how-to-asp-net' },
 								{ label: 'Node.JS', link: '/passwordless/guides/how-to-nodejs' },
+								{
+									label: 'Admin Console',
+									items: [
+										{ label: 'Overview', link: '/passwordless/guides/admin-console' },
+										{ label: 'Applications', link: '/passwordless/guides/admin-console/applications' },
+									]
+								},
 							]
 						},
 						{
-							label: 'References',							
+							label: 'References',
 							autogenerate: { directory: 'passwordless/references' }
 						},
 						{
-							label: 'SDKs',							
+							label: 'SDKs',
 							autogenerate: { directory: 'passwordless/sdk' }
 						}
 					]
@@ -46,7 +53,7 @@ export default defineConfig({
 			components: {
 				Sidebar: './src/overrides/Sidebar.astro',
 				Pagination: './src/overrides/Pagination.astro',
-			  },
+			},
 		}),
 	],
 });
