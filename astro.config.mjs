@@ -17,6 +17,7 @@ export default defineConfig({
 					label: 'Passwordless',				
 					items: [
 						{ label: 'Product overview', link: '/passwordless/' },
+						{ label: 'Getting Started', link: '/passwordless/getting-started' },
 						{
 							label: 'Guides',
 							items: [
