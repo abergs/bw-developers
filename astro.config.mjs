@@ -28,6 +28,7 @@ export default defineConfig({
 									items: [
 										{ label: 'Overview', link: '/passwordless/guides/admin-console' },
 										{ label: 'Applications', link: '/passwordless/guides/admin-console/applications' },
+										{ label: 'Billing', link: '/passwordless/guides/admin-console/billing' },
 									]
 								},
 							]
